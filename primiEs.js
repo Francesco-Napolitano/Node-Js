@@ -1,26 +1,7 @@
-import moduleName from 'module'
+console.log('prova: ', __dirname)
 
-async function getData() {
-  return Promise.resolve('data')
-}
+console.log('prova filename: ', __filename)
 
-async function getMoreData(data) {
-  return Promise.resolve(data + 'more data')
-}
+console.log('prova module: ', module)
 
-async function getAll() {
-  const data = await getData()
-  const moreData = await getMoreData(data)
-  return `All the data: ${data}, ${moreData}`
-}
-
-getAll().then((all) => {
-  console.log('all the data')
-})
-
-const express = require('express')
-const app = express()
-const port = 3000
-
-app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+console.log('prova process:', process)
