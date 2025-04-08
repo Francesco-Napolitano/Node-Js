@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Francesco-Napolitano/Node-Js#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "nodemon": "^3.1.9"
   }
 }
