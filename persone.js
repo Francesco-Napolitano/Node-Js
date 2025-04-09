@@ -23,4 +23,40 @@ export const persone = [
     },
     interessi: ['calcio', 'sparare agli scafisti'],
   },
+  {
+    id: '3',
+    nome: 'Luigi',
+    cognome: 'Berlusconi',
+    eta: 32,
+    indirizzo: {
+      citta: 'Torino',
+      via: 'Via Roma',
+      cap: 10123,
+    },
+    interessi: ['calcio', 'sparare agli scafisti'],
+  },
+  {
+    id: '4',
+    nome: 'Mauro',
+    cognome: 'Cruciani',
+    eta: 32,
+    indirizzo: {
+      citta: 'Torino',
+      via: 'Via Roma',
+      cap: 10123,
+    },
+    interessi: ['calcio', 'sparare agli scafisti'],
+  },
+  {
+    id: '5',
+    nome: 'Alessandro',
+    cognome: 'Negri',
+    eta: 32,
+    indirizzo: {
+      citta: 'Torino',
+      via: 'Via Roma',
+      cap: 10123,
+    },
+    interessi: ['calcio', 'sparare agli scafisti'],
+  },
 ]
