@@ -1,20 +1,18 @@
 import express from 'express'
 import { middlewareProva } from './middlewareProva.js'
 import { authMiddleware } from './authMiddleware.js'
+import { persone } from './persone.js'
 
 const app = express()
-app.use([middlewareProva, authMiddleware])
-app.use(express.static('/public'))
 
-app.get('/', (req, res) => {
-  res.send('Homepage')
+app.get('/api/persone', (req, res) => {
+  res.status(200).json({ data: persone, success: true })
 })
 
-app.get('/about', (req, res) => {
-  res.send('About')
-})
-app.get('/about/dettagli', (req, res) => {
-  res.send('About + dettagli')
+app.get('/api/persone/:id', (req, res) => {
+  const { id } = req.params
+  const persona = persone.find((p) => p.id === id)
+  res.json(persona)
 })
 
 app.listen(3000)
