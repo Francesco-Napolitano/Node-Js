@@ -51,12 +51,5 @@ export const persone = [
     id: '5',
     nome: 'Alessandro',
     cognome: 'Negri',
-    eta: 32,
-    indirizzo: {
-      citta: 'Torino',
-      via: 'Via Roma',
-      cap: 10123,
-    },
-    interessi: ['calcio', 'sparare agli scafisti'],
   },
 ]
